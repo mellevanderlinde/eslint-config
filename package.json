@@ -2,7 +2,12 @@
   "name": "@ml/eslint-config",
   "private": true,
   "packageManager": "pnpm@10.32.1",
+  "scripts": {
+    "lint": "eslint"
+  },
   "dependencies": {
-    "@antfu/eslint-config": "^7.7.3"
+    "@antfu/eslint-config": "^7.7.3",
+    "eslint": "^10.1.0",
+    "jiti": "^2.6.1"
   }
 }
