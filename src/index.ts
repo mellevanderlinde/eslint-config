@@ -18,3 +18,5 @@ export function defineConfig(): ReturnType<typeof antfu> {
     typescript: true,
   })
 }
+
+// TODO imports line spacing, export, class etc
