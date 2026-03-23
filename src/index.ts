@@ -12,6 +12,7 @@ export function defineConfig(): ReturnType<typeof antfu> {
       'style/object-property-newline': ['error', { allowAllPropertiesOnSameLine: true }],
       'test/padding-around-all': 'error',
       'ts/explicit-function-return-type': 'error',
+      'ts/no-non-null-assertion': 'error',
       'unicorn/no-empty-file': 'error',
     },
     typescript: true,
