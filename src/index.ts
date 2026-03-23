@@ -6,6 +6,7 @@ export function defineConfig(): ReturnType<typeof antfu> {
       'curly': 'error',
       'no-new': 'off',
       'perfectionist/sort-objects': 'error',
+      'test/padding-around-all': 'error',
       'ts/explicit-function-return-type': 'error',
       'unicorn/no-empty-file': 'error',
     },
