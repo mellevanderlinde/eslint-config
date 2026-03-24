@@ -4,6 +4,8 @@ export function defineConfig(): ReturnType<typeof antfu> {
   return antfu({
     rules: {
       'curly': 'error',
+      'no-else-return': 'error',
+      'no-lonely-if': 'error',
       'no-new': 'off',
       'perfectionist/sort-objects': 'error',
       'style/array-bracket-newline': ['error', 'consistent'],
