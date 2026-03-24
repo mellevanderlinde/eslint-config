@@ -7,6 +7,7 @@ export function defineConfig(): ReturnType<typeof antfu> {
       'no-else-return': 'error',
       'no-lonely-if': 'error',
       'no-new': 'off',
+      'padding-line-between-statements': ['error', { blankLine: 'never', next: 'import', prev: 'import' }],
       'perfectionist/sort-objects': 'error',
       'style/array-bracket-newline': ['error', 'consistent'],
       'style/array-element-newline': ['error', 'consistent'],
@@ -20,5 +21,3 @@ export function defineConfig(): ReturnType<typeof antfu> {
     typescript: true,
   })
 }
-
-// TODO imports line spacing, export, class etc
