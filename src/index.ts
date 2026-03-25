@@ -10,6 +10,7 @@ export function defineConfig(): ReturnType<typeof antfu> {
       'no-new': 'off',
       'padding-line-between-statements': ['error', { blankLine: 'never', next: 'import', prev: 'import' }],
       'perfectionist/sort-objects': 'error',
+      'pnpm/yaml-enforce-settings': 'off',
       'style/array-bracket-newline': ['error', 'consistent'],
       'style/array-element-newline': ['error', 'consistent'],
       'style/object-curly-newline': ['error'],
