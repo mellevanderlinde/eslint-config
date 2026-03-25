@@ -2,6 +2,8 @@
   "name": "@ml/eslint-config",
   "private": true,
   "packageManager": "pnpm@10.32.1",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "ci": "pnpm run '/^(lint|build)$/'",
     "build": "tsc",
