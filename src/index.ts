@@ -2,6 +2,7 @@ import { antfu } from '@antfu/eslint-config'
 
 export function defineConfig(): ReturnType<typeof antfu> {
   return antfu({
+    ignores: ['**/_next/**'],
     rules: {
       'curly': 'error',
       'no-else-return': 'error',
