@@ -4,7 +4,7 @@ exports.defineConfig = defineConfig;
 const eslint_config_1 = require("@antfu/eslint-config");
 function defineConfig() {
     return (0, eslint_config_1.antfu)({
-        ignores: ['**/_next/**', '**/cdk.out/**'],
+        ignores: ['**/_next/**', '**/cdk.out/**', '**/*.d.ts'],
         rules: {
             'curly': 'error',
             'no-else-return': 'error',
