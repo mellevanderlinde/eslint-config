@@ -4,6 +4,7 @@
     "lib": [
       "es2022"
     ],
+    "rootDir": "src",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "typeRoots": [
@@ -20,9 +21,13 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "declaration": true,
-    "noEmit": true,
+    "outDir": "dist",
+    "removeComments": true,
     "skipLibCheck": true
   },
+  "include": [
+    "src/**/*"
+  ],
   "exclude": [
     "node_modules"
   ]
