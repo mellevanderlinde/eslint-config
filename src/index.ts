@@ -23,5 +23,3 @@ export function defineConfig(): ReturnType<typeof antfu> {
     typescript: true,
   })
 }
-
-// TODO releases of versions, ci.yml
