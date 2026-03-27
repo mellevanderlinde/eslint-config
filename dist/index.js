@@ -16,6 +16,7 @@ function defineConfig() {
             'style/array-bracket-newline': ['error', 'consistent'],
             'style/array-element-newline': ['error', 'consistent'],
             'style/function-paren-newline': ['error', 'consistent'],
+            'style/newline-per-chained-call': ['error'],
             'style/object-curly-newline': ['error'],
             'style/object-property-newline': ['error', { allowAllPropertiesOnSameLine: true }],
             'test/padding-around-all': 'error',
