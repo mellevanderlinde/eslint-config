@@ -22,6 +22,7 @@ function defineConfig() {
             'test/padding-around-all': 'error',
             'ts/explicit-function-return-type': 'error',
             'ts/no-non-null-assertion': 'error',
+            'ts/no-useless-constructor': 'error',
             'unicorn/no-empty-file': 'error',
         },
         typescript: true,
