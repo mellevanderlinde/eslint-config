@@ -20,10 +20,13 @@ export function defineConfig(): ReturnType<typeof antfu> {
       'test/padding-around-all': 'error',
       'ts/explicit-function-return-type': 'error',
       'ts/no-non-null-assertion': 'error',
-      'ts/no-useless-constructor': 'error',
       'ts/no-useless-empty-export': 'error',
       'unicorn/no-empty-file': 'error',
     },
-    typescript: true,
+    typescript: {
+      overrides: {
+        'ts/no-useless-constructor': 'error',
+      },
+    },
   })
 }
