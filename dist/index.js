@@ -1,9 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.defineConfig = defineConfig;
-const eslint_config_1 = require("@antfu/eslint-config");
-function defineConfig() {
-    return (0, eslint_config_1.antfu)({
+import { antfu } from '@antfu/eslint-config';
+export function defineConfig() {
+    return antfu({
         ignores: ['**/_next/**', '**/cdk.out/**', '**/*.d.ts'],
         rules: {
             'curly': 'error',
@@ -11,6 +8,7 @@ function defineConfig() {
             'no-lonely-if': 'error',
             'no-negated-condition': 'error',
             'no-new': 'off',
+            'no-unreachable': 'error',
             'no-useless-escape': 'error',
             'padding-line-between-statements': ['error', { blankLine: 'never', next: 'import', prev: 'import' }],
             'perfectionist/sort-objects': 'error',
@@ -28,9 +26,14 @@ function defineConfig() {
             'ts/no-useless-empty-export': 'error',
             'unicorn/no-empty-file': 'error',
         },
+        type: 'lib',
         typescript: {
             overrides: {
+                'ts/no-unnecessary-condition': 'error',
                 'ts/no-useless-constructor': 'error',
+            },
+            parserOptions: {
+                projectService: true,
             },
         },
     });

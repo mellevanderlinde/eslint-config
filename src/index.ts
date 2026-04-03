@@ -9,6 +9,7 @@ export function defineConfig(): ReturnType<typeof antfu> {
       'no-lonely-if': 'error',
       'no-negated-condition': 'error',
       'no-new': 'off',
+      'no-unreachable': 'error',
       'no-useless-escape': 'error',
       'padding-line-between-statements': ['error', { blankLine: 'never', next: 'import', prev: 'import' }],
       'perfectionist/sort-objects': 'error',
@@ -26,9 +27,14 @@ export function defineConfig(): ReturnType<typeof antfu> {
       'ts/no-useless-empty-export': 'error',
       'unicorn/no-empty-file': 'error',
     },
+    type: 'lib',
     typescript: {
       overrides: {
+        'ts/no-unnecessary-condition': 'error',
         'ts/no-useless-constructor': 'error',
+      },
+      parserOptions: {
+        projectService: true,
       },
     },
   })
