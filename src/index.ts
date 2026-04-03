@@ -7,6 +7,7 @@ export function defineConfig(): ReturnType<typeof antfu> {
       'curly': 'error',
       'no-else-return': 'error',
       'no-lonely-if': 'error',
+      'no-negated-condition': 'error',
       'no-new': 'off',
       'no-useless-escape': 'error',
       'padding-line-between-statements': ['error', { blankLine: 'never', next: 'import', prev: 'import' }],
