@@ -29,6 +29,13 @@ export function defineConfig() {
         type: 'lib',
         typescript: {
             overrides: {
+                'ts/naming-convention': [
+                    'error',
+                    { format: ['camelCase'], selector: 'variableLike' },
+                    { format: ['camelCase'], selector: 'method' },
+                    { format: ['camelCase'], selector: 'accessor' },
+                    { format: ['PascalCase'], selector: 'typeLike' },
+                ],
                 'ts/no-unnecessary-condition': 'error',
                 'ts/no-useless-constructor': 'error',
             },
