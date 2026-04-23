@@ -36,6 +36,7 @@ export function defineConfig(): ReturnType<typeof antfu> {
           { format: ['camelCase'], selector: 'method' },
           { format: ['camelCase'], selector: 'accessor' },
           { format: ['PascalCase'], selector: 'typeLike' },
+          { format: null, modifiers: ['destructured'], selector: 'variable' },
         ],
         'ts/no-unnecessary-condition': 'error',
         'ts/no-useless-constructor': 'error',
