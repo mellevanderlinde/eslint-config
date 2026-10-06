@@ -25,7 +25,6 @@ export function defineConfig(): ReturnType<typeof antfu> {
       'ts/no-non-null-assertion': 'error',
       'ts/no-unnecessary-parameter-property-assignment': 'error',
       'ts/no-useless-empty-export': 'error',
-      'unicorn/no-empty-file': 'error',
     },
     type: 'lib',
     typescript: {
@@ -40,6 +39,7 @@ export function defineConfig(): ReturnType<typeof antfu> {
         ],
         'ts/no-unnecessary-condition': 'error',
         'ts/no-useless-constructor': 'error',
+        'unicorn/no-empty-file': 'error',
       },
       parserOptions: {
         projectService: true,

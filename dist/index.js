@@ -24,7 +24,6 @@ export function defineConfig() {
             'ts/no-non-null-assertion': 'error',
             'ts/no-unnecessary-parameter-property-assignment': 'error',
             'ts/no-useless-empty-export': 'error',
-            'unicorn/no-empty-file': 'error',
         },
         type: 'lib',
         typescript: {
@@ -39,6 +38,7 @@ export function defineConfig() {
                 ],
                 'ts/no-unnecessary-condition': 'error',
                 'ts/no-useless-constructor': 'error',
+                'unicorn/no-empty-file': 'error',
             },
             parserOptions: {
                 projectService: true,
