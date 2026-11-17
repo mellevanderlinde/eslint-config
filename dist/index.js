@@ -10,7 +10,10 @@ export function defineConfig() {
             'no-new': 'off',
             'no-unreachable': 'error',
             'no-useless-escape': 'error',
-            'padding-line-between-statements': ['error', { blankLine: 'never', next: 'import', prev: 'import' }],
+            'padding-line-between-statements': [
+                'error',
+                { blankLine: 'never', next: 'import', prev: 'import' },
+            ],
             'perfectionist/sort-objects': 'error',
             'pnpm/yaml-enforce-settings': 'off',
             'style/array-bracket-newline': ['error', 'consistent'],
@@ -18,7 +21,10 @@ export function defineConfig() {
             'style/function-paren-newline': ['error', 'consistent'],
             'style/newline-per-chained-call': 'error',
             'style/object-curly-newline': 'error',
-            'style/object-property-newline': ['error', { allowAllPropertiesOnSameLine: true }],
+            'style/object-property-newline': [
+                'error',
+                { allowAllPropertiesOnSameLine: true },
+            ],
             'test/padding-around-all': 'error',
             'ts/explicit-function-return-type': 'error',
             'ts/no-non-null-assertion': 'error',
@@ -30,11 +36,27 @@ export function defineConfig() {
             overrides: {
                 'ts/naming-convention': [
                     'error',
-                    { format: ['camelCase'], selector: 'variableLike' },
-                    { format: ['camelCase'], selector: 'method' },
-                    { format: ['camelCase'], selector: 'accessor' },
-                    { format: ['PascalCase'], selector: 'typeLike' },
-                    { format: null, modifiers: ['destructured'], selector: 'variable' },
+                    {
+                        format: ['camelCase'],
+                        selector: 'variableLike',
+                    },
+                    {
+                        format: ['camelCase'],
+                        selector: 'method',
+                    },
+                    {
+                        format: ['camelCase'],
+                        selector: 'accessor',
+                    },
+                    {
+                        format: ['PascalCase'],
+                        selector: 'typeLike',
+                    },
+                    {
+                        format: null,
+                        modifiers: ['destructured'],
+                        selector: 'variable',
+                    },
                 ],
                 'ts/no-unnecessary-condition': 'error',
                 'ts/no-useless-constructor': 'error',

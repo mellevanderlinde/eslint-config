@@ -11,8 +11,8 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@antfu/eslint-config": "^9.5.1",
-    "eslint": "^10.12.0"
+    "@antfu/eslint-config": "^10.0.0",
+    "eslint": "^10.15.0"
   },
   "devDependencies": {
     "typescript": "^6.0.3"
